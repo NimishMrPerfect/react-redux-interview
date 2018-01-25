@@ -1,0 +1,40 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  background-color: skyblue;
+}
+
+.navigation-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+}
+.navigation-link-wrapper > a {
+  font-size: 1.6rem;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+}
