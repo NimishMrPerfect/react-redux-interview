@@ -1,4 +1,3 @@
-import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Home from '../../components/home';
@@ -11,6 +10,7 @@ import {
 } from '../../store/actions'
 
 const mapStateToProps = state => ({
+	count: state.counter.count,
 	isIncrementing: state.counter.isIncrementing,
 	isDecrementing: state.counter.isDecrementing
 });

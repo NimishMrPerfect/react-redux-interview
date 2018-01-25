@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const Home = props => (
 	<div className="page-wrapper">
 		<h1>React/Redux Code Challenge</h1>
+		<h4>Count: {props.count}</h4>
 		<p>
 			<button onClick={props.increment} disabled={props.isIncrementing}>Increment</button>
 			<button onClick={props.incrementAsync} disabled={props.isIncrementing}>Increment Async</button>
