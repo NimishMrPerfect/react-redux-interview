@@ -9,18 +9,9 @@ import {
   decrementAsync
 } from '../../store/actions'
 
-const mapStateToProps = state => ({
-	count: state.counter.count,
-	isIncrementing: state.counter.isIncrementing,
-	isDecrementing: state.counter.isDecrementing
-});
+const mapStateToProps = state => ({});
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-  increment,
-  incrementAsync,
-  decrement,
-  decrementAsync,
-}, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
 export default connect(
 	mapStateToProps,
